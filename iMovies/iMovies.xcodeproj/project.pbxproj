@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6893AFC02E330CEB00FE3EAC /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 6893AFBF2E330CEB00FE3EAC /* Networking */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6893AF822E32FB5600FE3EAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6893AFC02E330CEB00FE3EAC /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = iMovies;
 			packageProductDependencies = (
+				6893AFBF2E330CEB00FE3EAC /* Networking */,
 			);
 			productName = iMovies;
 			productReference = 6893AF712E32FB5500FE3EAC /* iMovies.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 6893AF682E32FB5500FE3EAC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6893AFBE2E330CEB00FE3EAC /* XCLocalSwiftPackageReference "Packages/Networking" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6893AF722E32FB5500FE3EAC /* Products */;
 			projectDirPath = "";
@@ -589,6 +598,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6893AFBE2E330CEB00FE3EAC /* XCLocalSwiftPackageReference "Packages/Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Networking;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6893AFBF2E330CEB00FE3EAC /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6893AF692E32FB5500FE3EAC /* Project object */;
 }
