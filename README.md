@@ -2,7 +2,7 @@
 
 A sample app that introduces some iOS development techniques.
 
-![](/screenshots/movie_details.png)
+![](./screenshots/movie_details.png =150x)
 
 ## Objective 🎯
 The main objective of the project is to build a visually functional application that uses good user experience practices following the [Human Interface Guidelines (HIG)](https://developer.apple.com/design/human-interface-guidelines), using the latest technologies for iOS development and a solid architecture capable of scaling according to project needs.
