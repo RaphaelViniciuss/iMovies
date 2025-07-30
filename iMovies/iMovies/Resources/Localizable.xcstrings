@@ -1,0 +1,33 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%.1f" : {
+
+    },
+    "%lld mins" : {
+
+    },
+    "Cast and Crew" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Less" : {
+
+    },
+    "More" : {
+
+    },
+    "Popular movies" : {
+
+    },
+    "See All" : {
+
+    },
+    "Story Line" : {
+
+    }
+  },
+  "version" : "1.0"
+}
