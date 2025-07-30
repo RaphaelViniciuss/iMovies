@@ -2,6 +2,7 @@ import Networking
 
 protocol MovieListService {
     func fetchNowPlayingMovies() async throws -> [MovieResponse]
+    func fetchPopularMovies() async throws -> [MovieResponse]
 }
 
 struct DefaultMovieListService: MovieListService {
@@ -12,4 +13,8 @@ struct DefaultMovieListService: MovieListService {
         return try await networkService.fetch(endpoint, as: MovieListResponse.self).results
     }
 
+    func fetchPopularMovies() async throws -> [MovieResponse] {
+        let endpoint = Endpoint(path: "/movie/popular", headers: Constants.auth)
+        return try await networkService.fetch(endpoint, as: MovieListResponse.self).results
+    }
 }

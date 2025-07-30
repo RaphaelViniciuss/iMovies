@@ -12,6 +12,7 @@ struct HomeView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 24) {
                     nowPlayingContent()
+                    popularMoviesContent()
                     Spacer()
                 }
             }
@@ -24,6 +25,10 @@ struct HomeView: View {
             viewModel.onNavigate(.movieDetail(id))
         }
     }
+
+    @ViewBuilder private func popularMoviesContent() -> some View {
+        PopularMoviesView(viewModel: viewModel.popularMoviesViewModel) { id in
+            viewModel.onNavigate(.movieDetail(id))
         }
     }
 }
