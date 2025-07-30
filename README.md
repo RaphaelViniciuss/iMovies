@@ -1,8 +1,9 @@
 # iMovies
 
 A sample app that introduces some iOS development techniques.
-
-![](./screenshots/movie_details.png =150x)
+<center>
+<img src="https://github.com/RaphaelViniciuss/iMovies/blob/main/screenshots/movie_details.png?raw=true" width="200"/>
+</center>
 
 ## Objective 🎯
 The main objective of the project is to build a visually functional application that uses good user experience practices following the [Human Interface Guidelines (HIG)](https://developer.apple.com/design/human-interface-guidelines), using the latest technologies for iOS development and a solid architecture capable of scaling according to project needs.
