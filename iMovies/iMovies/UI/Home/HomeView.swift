@@ -8,6 +8,22 @@ struct HomeView: View {
         ZStack {
             Color.background
                 .ignoresSafeArea()
+
+            ScrollView(.vertical) {
+                VStack(spacing: 24) {
+                    nowPlayingContent()
+                    Spacer()
+                }
+            }
+            .padding(.top, 16)
+        }
+    }
+
+    @ViewBuilder private func nowPlayingContent() -> some View {
+        NowPlayingMoviesView(viewModel: viewModel.nowPlayingViewModel) { id in
+            viewModel.onNavigate(.movieDetail(id))
+        }
+    }
         }
     }
 }
