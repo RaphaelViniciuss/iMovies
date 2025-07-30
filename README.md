@@ -31,16 +31,17 @@ Together, we can adopt a modular architecture to decouple code that doesn't nece
 The benefits of this approach mean that changes to the package don't directly impact the entire application, and the application only knows abstractions that the availability package (SRP and DIP) provides.
 
 ## Known issues bug 🐛
+- Currently the tests are triggering the API every run This is not a good behavior since the objective of testing is to test small blocks or code integrations totally isolated from API, in addition to significantly increasing server consumption.
 
 ## What's next 📌
-### Features
+#### Features
 
 - Enable users to search a movie by name, genres, year
 - Enable users mark movies as favorite, so that the app can provide a personalized contents
 - Add trailer and user comments in Movie details view
 - Add a content that tell for user where the movie can be seen (Cinema or streaming)
 
-### Tech
+#### Tech
 
 - Solve TODO flags in the app
 - Add Localization for other languages
